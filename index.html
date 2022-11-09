@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="wirdth=device-wirdth, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/53331b204d.js" crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <div id="header">
+       <div class="container">
+        <nav>
+          <img src="images/342.png.png" class="logo">
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Co-curricular">Co-curricular</a></li>
+            <li><a href="#Certificates">Certificates</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+
+        </nav>
+         <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Rishabh</span> Motiani</h1>
+         </div>
+       </div>
+        
+    </div>
+    <!-- ---------about----------- -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/car.png.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p> Myself Rishabh Motiani.I am 19 years old. I am from MADHYA PRADESH(BHOPAL)<br> and currently persuiing Btech in Computer science and engineering from SRM INSTITUTE OF TECHNOLOGY (ktr Campus). 
+          <br>I did my schooling from DPS(till class 9th) & Campion(9th-12th).<br> My hobies include coding,playing Piano & playing Football.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('Bulletins')">Bulletins</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Web Developer</span><br>Exploring myself more in web developing </li>
+            <li><span>Event Management</span><br>Managing Tech/Non-Tech events</li>
+            <li><span>Emceeing</span><br>Anchoring/Comparing</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2005-2009</span><br>Amarjot School (in rural area)</li>
+            <li><span>2009-2010</span><br>Holy Family School(bhopal)</li>
+            <li><span>2010-12</span><br>Campion School(bhopal)</li>
+            <li><span>2012-15</span><br>DPS (gujrat)</li>
+            <li><span>2015-21</span><br>Campion School (bhopal)</li>
+            <li><span>2021-present</span><br>SRMIST (Chennai)</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="Bulletins">
+          <ul>
+            <li><span>DOMAIN HEAD</span><br>Event Management Domain Head at Think Degital SRM </li>
+            <li><span>NWC ASSOCIATION</span><br>Member</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------co-curricual--------- -->
+<div id="Co-curricular">
+  <div class="container">
+    <h1 class="sub-title">Co-Curricular</h1>
+    <div class="Activity-list">
+     <div>
+      <i class="fa-solid fa-futbol"></i>
+      <h2>Football</h2>
+      <p> I have playes football at national level.I have Represented my School, Represented my club, Represented my District.My jersey number is 01 & 22. </p>
+     </div>
+     <div>
+      <i class="fa-solid fa-piano-keyboard"></i>
+      <h2>These fingers of mine they got brains in them</h2>
+      <p> I love playing piano and i have been playing it since ages(from pasr 12 years). I love to be on keys and to play piano non stop is what i love the most.</p>
+     </div>
+     <div>
+      <i class="fa-solid fa-badminton"></i>
+      <h2>Badminton</h2>
+      <p> I have played badminton too in my school days to represent my school on clusters.</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-person-running"></i>
+        <h2>Track and field</h2>
+        <p> I am a track and field athlete who runs 100m race only.</p>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+<!-- ----------------certi------------------ -->
+<div id="Certificates">
+  <div class="container">
+    <h1 class="sub-title">Certificates</h1>
+    <div class="certificates">
+      <div class="cert1">
+        <img src="images/1.png.png">
+      </div>
+      <div class="cert1">
+        <img src="images/2.png.jpg">
+      </div>
+      <div class="cert1">
+        <img src="images/3.png.png">
+      </div>
+      <div class="cert1">
+        <img src="images/4.png.png">
+      </div>
+      <div class="cert1">
+        <img src="images/5.png.jpg">
+      </div>
+    </div>
+    </div>
+    <!-- ------------contact--------------- -->
+    <div id="Contacts">
+      <div class="container">
+
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="Contacts">
+            <p><i class="fa-solid fa-paper-plane"></i>rishabhm040@gmail.com</p>
+            <div class="socoal-icons">
+              <a href="https://in.linkedin.com/in/rishabh-motiani-3116bb230"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="rishabhm040@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+      </div>
+  </div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+  </body>
+    
+</html>
